@@ -1,3 +1,17 @@
+local keys = {
+   ["Key_tW7FFEdCHjvBtpzLAkargnr9Btrg68"] = true,
+   ["Key_Pq5XvPTJcEiCh4BP6NJRcZqEJKM6xt"] = true,
+   ["Key_uBH5kPP3VtjD2wmX248iSpn6kVedxN"] = true,
+   ["Key_9LBpHy7QBPnaiEUAc8G5xCk9MEGDQK"] = true,
+   ["Key_2mY5NC5BQ74ecnxPFrFXA3a95uRkLp"] = true,
+   ["Key_Cc7aXgJXy4pPu3bzpYtaD3zXdiRdrC"] = true,
+   ["Key_y9kaNLvYb2BwkH59LKqK7B3Q6k7vQn"] = true,
+   ["Key_bhJt3GHWS9d3MWhyib6uXkQiWZUU4L"] = true,
+   ["Key_mQ7JrvEJtz9DUiFKh6yjL9Uvd2m24z"] = true,
+   ["Key_zxTCftLSfJJjAynXcwQUaq47KePbCE"] = true,
+}
+
+if keys[shared.key] then
 local Config = {
     WindowName = "michaelhook_",
 	Color = Color3.fromRGB(0,102,204),
@@ -103,3 +117,6 @@ Toggle3:CreateKeybind(tostring(Config.Keybind):gsub("Enum.KeyCode.", ""), functi
 	Config.Keybind = Enum.KeyCode[Key]
 end)
 Toggle3:SetState(true)
+else
+game.Players.LocalPlayer:Kick(" ")
+end 
