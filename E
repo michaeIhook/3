@@ -1,15 +1,3 @@
-local keys = {
-   ["Key5Gv4Mw"] = true,
-   ["Keyy5CQkb"] = true,
-   ["KeyBdaZnc"] = true,
-   ["KeygxxMpC"] = true,
-}
-
-if keys[shared.key] then
-    
-else
-game.Players.LocalPlayer:Kick(" ")
-end  
 local Config = {
     WindowName = "michaelhook_",
 	Color = Color3.fromRGB(0,102,204),
